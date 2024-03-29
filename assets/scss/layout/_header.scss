@@ -1,0 +1,70 @@
+ @import "../utilities/variable";
+ @import "../layout/grid";
+ @import "../base/typograpy";
+
+
+.all{
+    border: 1px solid white;
+    @extend .flex;
+    padding: 20px;
+   
+    // gap: 50px
+    background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp);
+    &_main{
+        @extend .flex;
+    
+        &_list{
+              
+                @extend .flex2;
+                gap: 20px;
+                padding-top: 20px;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    gap: 40px;
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+        }
+
+        &_img{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    
+    }
+    &_left{
+        border: 1px solid $orange;
+        width: 190px;
+        height: 60px;
+        background-color: $orange;
+    
+        a{
+            color: white;
+            @extend .flex;
+            padding-top: 20px;
+        }
+    }
+
+    &_right{
+        @extend .flex;
+
+        a{
+            color: white;
+        }
+
+        &_icon{
+            border: 1px solid $orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: $orange;
+
+        }
+
+    }
+    
+}
